@@ -25,6 +25,30 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 2.  **Normalization:** Converted non-numeric strings to numeric floats and filtered for statistically significant cases.
 3.  **Categorization:** Isolated State-Owned, Physician-Owned, and Tribal hospitals from the general "Other" category to identify high-performance outliers.
 
+## 🚀 Analytical Workflow
+
+This project followed a multi-stage clinical investigation, moving from initial data observation to a deep-dive infrastructure analysis.
+
+### **Phase 1: Discovery & Problem Definition**
+*   **Objective:** Initial audit of the aggregated respiratory analysis table.
+*   **The Problem:** Observed that the summary data was too narrow, and high-performing `Government State Owned` hospitals were hidden within a generic "Other" category.
+*   **Technical Steps:** [View Exploration Script](./sql_queries/01_exploration.sql) | [View Satisfaction Baseline](./sql_queries/07_respiratory_satisfaction_summary.sql)
+
+### **Phase 2: Data Engineering & Multi-Condition Integration**
+*   **Objective:** Reconstruct the dataset from raw HCAHPS and HRRP sources to ensure data integrity and pathology breadth.
+*   **Clinical Focus:** Expanded the scope to include **Pneumonia (PN)**, **COPD**, and **Heart Failure (HF)** to see if ownership success was consistent across different organ systems (Respiratory vs. Cardiac).
+*   **Technical Steps:** [View Normalization & Joins](./sql_queries/02_normalization_and_joins.sql) | [View Heart Failure Deep Dive](./sql_queries/03_heart_failure_deep_dive.sql) | [View Clinical Rankings](./sql_queries/05_clinical_rankings.sql)
+
+### **Phase 3: Hypothesis Testing (The "ER Myth")**
+*   **Objective:** Test if the presence of Emergency Services (ER) was the primary driver of lower readmission rates.
+*   **The Discovery:** Data indicated that ER availability did not correlate strongly with lower readmissions. This shifted the focus toward organizational models and discharge protocols as the true drivers of quality.
+*   **Technical Steps:** [View ER Impact Analysis](./sql_queries/06_er_impact_analysis.sql)
+
+### **Phase 4: Clinical Infrastructure Analysis**
+*   **Objective:** Identify common traits among top-performing ownership models (State, Tribal, and Physician-owned).
+*   **Clinician Insight:** Identified that a high percentage of these top-performing facilities are **Critical Access Hospitals**. These smaller, specialized facilities often allow for the high-quality **Discharge Information** protocols that my analysis identified as a key success factor.
+*   **Technical Steps:** [View Infrastructure Analysis](./sql_queries/04_infrastructure_analysis.sql)
+
 
 ## 👤 Author
 **Dr. Virginia Rodriguez Henriquez, MD**
