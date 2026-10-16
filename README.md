@@ -16,8 +16,6 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 *   **GCP (Google Cloud Platform):** Data hosted and processed in a cloud environment.
 
 ## 📂 Repository Structure
-
-```text
 ├── queries/
 │   ├── 01_initial_exploration.sql       # Phase 1: Satisfaction baselines
 │   ├── 02_normalization_and_joins.sql   # Phase 2: Data cleaning & integration
