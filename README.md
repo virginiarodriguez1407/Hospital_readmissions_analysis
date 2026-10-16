@@ -10,7 +10,7 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 *   **The Discharge Factor:** Providing high-quality **Discharge Information** was identified as a statistically significant driver in reducing readmissions, outperforming the presence of Emergency Services (ER) in predictive relevance.
 *   **Quality vs. Perception:** Clinical quality metrics (Readmission Ratios) do not always correlate with subjective Patient Satisfaction scores, highlighting a gap between clinical excellence and patient perception.
 
-![Hospital Readmissions Analysis Dashboard](dashboard_preview.png)
+![Hospital Readmissions Analysis Dashboard](dashboard preview.png)
 
 ## 🛠️ Tools & Technologies
 *   **SQL (Google BigQuery):** Used for large-scale data joining, cleaning, and multi-pathology aggregation (Pneumonia, COPD, Heart Failure).
