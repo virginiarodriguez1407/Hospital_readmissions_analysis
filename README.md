@@ -24,11 +24,8 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 ## 📂 Repository Structure
 
 *   **Queries**
-
-*   **Visualizations:** 
-  ├── dashboard_preview.png
-  └── (https://public.tableau.com/views/TheRecoveryTriangleProtocolsoverPerceptions/TheRecoveryTriangle?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).md
- *   **README**  
+*   **Visualizations** 
+*   **README**  
 
 ## 📈 Methodology
 1.  **Data Integration:** Joined `HRRP` (Readmission data) with `Hospital General Information` and `Hospital Readmissions` (HCAHPS) using `Facility ID`.
