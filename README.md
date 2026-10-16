@@ -15,10 +15,20 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 *   **Tableau:** Developed dual-axis visualizations to correlate clinical outcomes with patient satisfaction.
 *   **GCP (Google Cloud Platform):** Data hosted and processed in a cloud environment.
 
-## 📁 Repository Structure
-*   `/queries`: Contains SQL scripts for data normalization and ownership categorization.
-*   `/visualizations`: Links to the interactive Tableau Public dashboard.
-*   `/data_dictionary`: Brief explanation of the HCAHPS and HRRP metrics used.
+## 📂 Repository Structure
+
+```text
+├── queries/
+│   ├── 01_initial_exploration.sql       # Phase 1: Satisfaction baselines
+│   ├── 02_normalization_and_joins.sql   # Phase 2: Data cleaning & integration
+│   ├── 03_heart_failure_deep_dive.sql   # Phase 2: Cardiac-specific analysis
+│   ├── 04_er_impact_analysis.sql        # Phase 3: Hypothesis testing
+│   └── 05_infrastructure_analysis.sql   # Phase 4: Critical Access Hospital traits
+├── visualizations/
+│   ├── dashboard_screenshot.png         # Preview of the Tableau interface
+│   └── tableau_link.md                  # Direct link to Tableau Public
+└── data_dictionary/
+    └── metrics_definition.md            # Detailed HCAHPS/HRRP explanations
 
 ## 📈 Methodology
 1.  **Data Integration:** Joined `HRRP` (Readmission data) with `Hospital General Information` and `Hospital Readmissions` (HCAHPS) using `Facility ID`.
