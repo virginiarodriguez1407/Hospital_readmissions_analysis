@@ -16,22 +16,34 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 *   **GCP (Google Cloud Platform):** Data hosted and processed in a cloud environment.
 
 ## 📂 Repository Structure
-├── queries/
-│   ├── 01_initial_exploration.sql       # Phase 1: Satisfaction baselines
-│   ├── 02_normalization_and_joins.sql   # Phase 2: Data cleaning & integration
-│   ├── 03_heart_failure_deep_dive.sql   # Phase 2: Cardiac-specific analysis
-│   ├── 04_er_impact_analysis.sql        # Phase 3: Hypothesis testing
-│   └── 05_infrastructure_analysis.sql   # Phase 4: Critical Access Hospital traits
-├── visualizations/
-│   ├── dashboard_screenshot.png         # Preview of the Tableau interface
-│   └── tableau_link.md                  # Direct link to Tableau Public
-└── data_dictionary/
-    └── metrics_definition.md            # Detailed HCAHPS/HRRP explanations
+
+queries/
+  ├── 01_satisfaction_baseline.sql
+  ├── 02_normalization_and_joins.sql
+  ├── 03_heart_failure_deep_dive.sql
+  ├── 04_er_impact_analysis.sql
+  └── 05_infrastructure_analysis.sql
+visualizations/
+  ├── dashboard_preview.png
+  └── tableau_link.md
+README.md
 
 ## 📈 Methodology
 1.  **Data Integration:** Joined `HRRP` (Readmission data) with `Hospital General Information` and `Hospital Readmissions` (HCAHPS) using `Facility ID`.
 2.  **Normalization:** Converted non-numeric strings to numeric floats and filtered for statistically significant cases.
 3.  **Categorization:** Isolated State-Owned, Physician-Owned, and Tribal hospitals from the general "Other" category to identify high-performance outliers.
+
+## 📖 Data Dictionary & Metric Definitions
+
+### HRRP (Hospital Readmissions Reduction Program)
+*   **Targeted Conditions:** Analysis focuses on Pneumonia (PN), Heart Failure (HF), and Chronic Obstructive Pulmonary Disease (COPD).
+*   **Excess Readmission Ratio (ERR):** The primary clinical outcome metric. A ratio > 1.0 indicates that a hospital’s readmission rate was higher than the national predicted rate for that condition.
+*   **Facility ID:** The unique primary key used to join clinical outcomes with hospital metadata.
+
+### HCAHPS (Patient Satisfaction Survey)
+*   **Discharge Information Score:** A measure of how well hospital staff communicated post-discharge instructions to patients. *Identified in this project as a key driver of lower ERR.*
+*   **HCAHPS Star Rating:** A summary score (1-5) representing the patient's overall perception of care quality.
+*   **Nurse/Doctor Communication:** Survey dimensions used to test the correlation between "bedside manner" and clinical readmission success.
 
 ## 🚀 Analytical Workflow
 
