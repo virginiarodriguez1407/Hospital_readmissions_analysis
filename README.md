@@ -17,9 +17,9 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 
 ## 📂 Repository Structure
 
-*   **queries**
+*   **Queries**
 
-*   **visualizations:** 
+*   **Visualizations:** 
   ├── dashboard_preview.png
   └── (https://public.tableau.com/views/TheRecoveryTriangleProtocolsoverPerceptions/TheRecoveryTriangle?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).md
  *   **README**  
