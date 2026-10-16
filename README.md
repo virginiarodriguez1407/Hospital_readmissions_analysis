@@ -17,14 +17,8 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 
 ## 📂 Repository Structure
 
-*   **queries:**
-./sql_queries/01_exploration.sql
-./sql_queries/02_normalization_and_joins.sql
-./sql_queries/ 03_heart_failure_deep_dive.sql
-./sql_queries/04_er_impact_analysis.sql
-./sql_queries/ 05_infrastructure_analysis.sql
-(./sql_queries/06_er_impact_analysis.sql)
-(./sql_queries/07_respiratory_satisfaction_summary.sql)
+*   **queries**
+
 *   **visualizations:** 
   ├── dashboard_preview.png
   └── (https://public.tableau.com/views/TheRecoveryTriangleProtocolsoverPerceptions/TheRecoveryTriangle?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).md
