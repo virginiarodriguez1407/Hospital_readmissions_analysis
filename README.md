@@ -11,8 +11,7 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 *   **Quality vs. Perception:** Clinical quality metrics (Readmission Ratios) do not always correlate with subjective Patient Satisfaction scores, highlighting a gap between clinical excellence and patient perception.
 
 ### 📊 Dashboard Preview
-[![Dashboard Analysis](dashboard_preview.png)((https://public.tableau.com/views/TheRecoveryTriangleProtocolsoverPerceptions/TheRecoveryTriangle?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
-
+[![Dashboard Analysis](dashboard_preview.png)((https://public.tableau.com/views/TheRecoveryTriangleProtocolsoverPerceptions/TheRecoveryTriangle?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))  
 *Haz clic en la imagen superior para abrir el dashboard interactivo.*
 
 
