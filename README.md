@@ -13,7 +13,7 @@ This project analyzes the **HCAHPS (Hospital Consumer Assessment of Healthcare P
 ### 📊 Dashboard Preview
 
 [<img width="1917" height="1161" alt="dashboard preview" src="https://github.com/user-attachments/assets/46d7121a-39e9-47f3-8961-6307946b9288" />](https://public.tableau.com/views/TheRecoveryTriangleProtocolsoverPerceptions/TheRecoveryTriangle?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-*Haz clic en la imagen superior para abrir el dashboard interactivo.*
+*Click on the image above to open the interactive dashboard.*
 
 
 ## 🛠️ Tools & Technologies
